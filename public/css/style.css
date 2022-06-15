@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+html {
+    font-size: 62.5%
+ }
+ .container {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #FFF;
+    color: #212529;
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: 4.4rem 4.4rem 28rem (4, minmax(min-content, max-content)) 14.5rem;
+    grid-template-areas: 
+    "header_container"
+    "nav_bar"
+    "big_title"
+    "cards_container"
+    "cards_container"
+    "blogs_container"
+    "aside_container"
+    "footer_container";
+}
+.header_container {
+    grid-area: header_container;
+    padding: 1.6rem 0;
+    border-bottom: 0.1rem solid #e5e5e5;
+}
+.header_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    text-align: center;
+}
+.link {
+    color: #6c757d;
+    font-size: 1.6rem;
+    padding: 0.4rem 1.5rem 0 1.5rem;
+}
+.title {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    color:#343a40;
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+.searcher {
+    color: #6c757d;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.searcher > a {
+    color: #6c757d;
+}
+.icon {
+    margin: 0 1.6rem;
+}
+.button {
+    border: solid 0.1rem #6c757d;
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+}
+.nav_bar {
+    grid-area: nav_bar;
+    font-size: 1.6rem;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+}
+.nav_item {
+    padding: 0.8rem;
+    color: #6c757d;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.big_title {
+    grid-area: big_title;
+    background-color: #343a40;
+    color: #FFF;
+    padding: 1.6rem;
+    border-radius: .25rem;
+}
+.title_2 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 4.0rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+}
+.text {
+    font-size: 2.0rem;
+    margin: 1.6rem 0;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.continue {
+    color: inherit;
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding: 0;
+
+}
+.cards_container {
+    grid-area: cards_container;
+}
+.blogs_container {
+    grid-area: blogs_container;
+}
+.aside_container {
+    grid-area: aside_container;
+}
+.footer_container {
+    grid-area: footer_container;
+}
