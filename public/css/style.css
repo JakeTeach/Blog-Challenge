@@ -97,6 +97,7 @@ html {
     color: #FFF;
     padding: 1.6rem;
     border-radius: .25rem;
+    margin-bottom: 3.2rem;
 }
 .title_2 {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -120,13 +121,183 @@ html {
 }
 .cards_container {
     grid-area: cards_container;
+    padding: 0 1.5rem;
+    margin: 0 -1.5rem 0.8rem -1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.card {
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-radius: .4rem;
+    margin-bottom: 2.4rem;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    padding: 2.0rem;
+}
+.strong {
+    color: #007bff;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+.card_title {
+    color: #343a40;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+    text-decoration: none;
+    font-size: 2.8rem; 
+}   
+.strong_2 {
+    color: #28a745;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+.date {
+    margin-bottom: 0.4rem;
+    padding: 0;
+}
+.card_text {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.card_link {
+    color: #007bff;
+    padding: 0;
+}
+.card_image {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    visibility:hidden;
+    display: none;
+}
+.blog {
+    margin-bottom: 6.4rem;
 }
 .blogs_container {
     grid-area: blogs_container;
+    line-height: 1.5;
+
+}
+.blog_subtitle {
+    font-style: italic;
+    font-size: 2.8rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.1rem solid #dee2e6;
+    margin-bottom: 2.4rem;   
+}
+.blog_title {
+    text-align: left;
+    font-size: 4rem;
+    padding: 0;  
+    margin-bottom: 0.4rem;
+}
+.author_info {
+    padding: 0;
+    color: #999;
+    margin-bottom: 2rem;
+}
+.blog_text {
+    color: #212529;
+    text-align: left;
+    margin-bottom: 1.6rem;
+}
+hr {
+    margin: 1.6rem 0 1.6rem 0;
+    border: 0;
+    border-top: 0.1rem solid rgba(0,0,0,.1);
+}
+.blog_link {
+    padding: 0;
+    color: #007bff;
+}
+.blog_second-title {
+    font-size: 3.2rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+.sub_heading {
+    text-align: left;
+    padding: 0;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+.code {
+    margin-bottom: 1.6rem;
+}
+.code > code {
+    font-size: 1.4rem;
+    font-family: iSFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+.blog_list {
+    padding-left: 4.0rem;
+}
+.list_item::marker {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.blog_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6.4rem;
+}
+.bl_button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 3.6rem;
+    color: #007bff;
+    border: 0.1rem solid #007bff;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 0.4rem;
+}
+.bl_button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.bl_button2 {
+    color: #6c757d;
+    border: 0.1rem solid #6c757d;
+    opacity: .65;
 }
 .aside_container {
     grid-area: aside_container;
+    /* padding: 0 1.5rem; */
+}
+.aside_title {
+    border: none;
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+    padding: 0;
+}
+.aside_card {
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    background-color: #f8f9fa;
+    border-radius: 0.4rem;
+}
+.aside_list {
+    line-height: 1.5;
+    padding: 1.5rem;
 }
 .footer_container {
     grid-area: footer_container;
+    overflow-x: visible;
+    padding: 4.0rem 0;
+    text-align: center;
+    background-color:#f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+.footer_item {
+    margin-bottom: 1.6rem;
+}
+.footer_text {
+    color: #999;
+    font-size: 1.6rem;
 }
